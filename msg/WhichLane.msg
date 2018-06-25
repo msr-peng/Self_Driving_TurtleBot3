@@ -1,0 +1,2 @@
+bool right
+bool left
