@@ -119,7 +119,7 @@ I get the curvature by pixel form following formula:
 f(y) = Ay^2 + By + C; \hspace{7mm}
 R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}}; \hspace{7mm}
 R_{curve} = \frac{(1+(2Ay+B)^2)^{3/2}}{2A}
-\end{equation}](https://latex.codecogs.com/svg.latex)
+\end{equation}](http://quicklatex.com/cache3/03/ql_1665a4285cc90da143c3106596099903_l3.png)
 
 Then according to the pixels to real world factors **ym_per_pixel** = 22.5/32000; **xm_per_pixel** = 17.5/32000, we can get the lane curvature in real world. In addition, we get the robot center deviation by two lanes’ x coordinates.
 After the calculation, I implemented an inverse perspective transform to mark the lane lines area.
