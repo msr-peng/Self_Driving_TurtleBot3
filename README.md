@@ -2,6 +2,7 @@
 
 
 ![Turtlebot 3](pictures/turtlebot-3.jpg)
+**Fig.0** TurtleBot3 Burger (original image is from [here](https://www.roscomponents.com/en/mobile-robots/214-turtlebot-3.html))
 
 ## Project Goal
 This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and appropriately respond to signs such as "stop", "decelerate", "U turn", "keep left", "keep right", "go straight".
@@ -205,6 +206,7 @@ The distribution of the dataset is as follow:
 As for the Convolutional Network structure, I refer [Yann LeCun's this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). The networks made up with 3 convolutional neural network, has 3*3 kernel, its depth of the next layer double, and has ReLU to serve as activation function. Each CNN has max 2*2 pooling. It has 3 layers of fully-connected layers, and generate 43 result at final layer.
 
 ![Deep CNN Architecture](https://github.com/msr-peng/Self_Driving_TurtleBot3/blob/master/pictures/Traffic%20Sign%20Classifier/CNN%20Architecture.png)
+**Fig.2** EdLeNet 3×3 Architecture (original image is from [here](https://towardsdatascience.com/recognizing-traffic-signs-with-over-98-accuracy-using-deep-learning-86737aedc2ab))
 
 **3. Dropout**
 
