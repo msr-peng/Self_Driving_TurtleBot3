@@ -119,7 +119,7 @@ I get the curvature by pixel form following formula:
 f(y) = Ay^2 + By + C; \hspace{7mm}
 R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}}; \hspace{7mm}
 R_{curve} = \frac{(1+(2Ay+B)^2)^{3/2}}{2A}
-\end{equation}](http://quicklatex.com/cache3/03/ql_1665a4285cc90da143c3106596099903_l3.png)
+\end{equation}](http://quicklatex.com/cache3/f1/ql_bbad19e213f5ea87768595b6007c63f1_l3.png)
 
 Then according to the pixels to real world factors **ym_per_pixel** = 22.5/32000; **xm_per_pixel** = 17.5/32000, we can get the lane curvature in real world. In addition, we get the robot center deviation by two lanes’ x coordinates.
 After the calculation, I implemented an inverse perspective transform to mark the lane lines area.
@@ -130,7 +130,12 @@ After the calculation, I implemented an inverse perspective transform to mark th
 
 The cross-track error’s (CTE) definition just as above show. In this project, the CTE is exactly the same as center offset we figure out. We’ll make CTE and R_Curve served as the input of PID controller. It’s output would be the robot angular velocity.
 
+.center[
 ![CTE difiniiton](https://github.com/msr-peng/Self_Driving_TurtleBot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/CTE.jpg)
+.caption[
+**Fig.1:** CTE difinition (original image is from [here](https://diydrones.com/profiles/blogs/705844:BlogPost:43438))
+]
+]
 
 ### Part 2. Traffic Sign Detection
 
