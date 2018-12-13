@@ -47,7 +47,7 @@ The classifier dataset is plit into training, test and validation sets, with the
 * Test set is composed of 10104 images
 * There are 43 classes (e.g. Speed Limit 20km/h, No entry, Bumpy road, etc.)
 
-Moreover, we will be using Python 2.7 with Tensorflow and OpenCV to write our code. And then drive the robot based on ROS platform.
+I used Python 2.7 with Tensorflow and OpenCV to write my code. And then drive the robot based on ROS platform.
 
 ## Project Architecture
 **Advanced Lane Finding**
@@ -115,11 +115,11 @@ Before we measuring the curvature, we firstly need to use a second (or third, if
 
 I get the curvature by pixel form following formula:
 
-\begin{equation}
+![\begin{equation}
 f(y) = Ay^2 + By + C; \hspace{7mm}
 R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}}; \hspace{7mm}
 R_{curve} = \frac{(1+(2Ay+B)^2)^{3/2}}{2A}
-\end{equation}
+\end{equation}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
 Then according to the pixels to real world factors **ym_per_pixel** = 22.5/32000; **xm_per_pixel** = 17.5/32000, we can get the lane curvature in real world. In addition, we get the robot center deviation by two lanes’ x coordinates.
 After the calculation, I implemented an inverse perspective transform to mark the lane lines area.
