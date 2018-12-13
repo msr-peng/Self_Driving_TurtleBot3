@@ -130,12 +130,8 @@ After the calculation, I implemented an inverse perspective transform to mark th
 
 The cross-track error’s (CTE) definition just as above show. In this project, the CTE is exactly the same as center offset we figure out. We’ll make CTE and R_Curve served as the input of PID controller. It’s output would be the robot angular velocity.
 
-.center[
 ![CTE difiniiton](https://github.com/msr-peng/Self_Driving_TurtleBot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/CTE.jpg)
-.caption[
 **Fig.1:** CTE difinition (original image is from [here](https://diydrones.com/profiles/blogs/705844:BlogPost:43438))
-]
-]
 
 ### Part 2. Traffic Sign Detection
 
