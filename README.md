@@ -2,6 +2,7 @@
 
 
 ![Turtlebot 3](pictures/turtlebot-3.jpg)
+     
 **Fig.0** TurtleBot3 Burger (original image is from [here](https://www.roscomponents.com/en/mobile-robots/214-turtlebot-3.html))
 
 ## Project Goal
